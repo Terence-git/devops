@@ -9,4 +9,28 @@ class HelloTest extends TestCase {
         $hello = new Hello();
         $this->assertEquals("Bonjour, BTS SIO SLAM!", $hello->sayHello("BTS SIO SLAM"));
     }
+
+    public function testSayHelloEmpty(): void
+    {
+        $hello = new Hello();
+        $this->assertEquals("Bonjour, !", $hello->sayHello(""));
+    }
+
+    public function testSpecialCharacters(): void
+    {
+        $hello = new Hello();
+        $this->assertEquals("Bonjour, élodie!", $hello->sayHello("élodie"));
+    }
+
+    public function testNumericName(): void
+    {
+        $hello = new Hello();
+        $this->assertEquals("Bonjour, 12345!", $hello->sayHello("1d2345"));
+    }
+
+    public function testReturnType(): void
+    {
+        $hello = new Hello();
+        $this->assertIsString($hello->sayHello("Bob"));
+    }
 }

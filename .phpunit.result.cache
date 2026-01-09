@@ -1,1 +1,1 @@
-{"version":1,"defects":{"App\\Tests\\HelloTest::testSayHello":7},"times":{"App\\Tests\\HelloTest::testSayHello":0.005}}
+{"version":1,"defects":{"App\\Tests\\HelloTest::testSayHello":7,"App\\Tests\\HelloTest::testSayHelloEmpty":8,"App\\Tests\\HelloTest::testSpecialCharacters":8,"App\\Tests\\HelloTest::testNumericName":7},"times":{"App\\Tests\\HelloTest::testSayHello":0.005,"App\\Tests\\HelloTest::testSayHelloEmpty":0,"App\\Tests\\HelloTest::testSpecialCharacters":0,"App\\Tests\\HelloTest::testNumericName":0,"App\\Tests\\HelloTest::testReturnType":0.001}}
