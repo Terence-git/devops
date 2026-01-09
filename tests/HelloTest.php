@@ -25,7 +25,7 @@ class HelloTest extends TestCase {
     public function testNumericName(): void
     {
         $hello = new Hello();
-        $this->assertEquals("Bonjour, 12345!", $hello->sayHello("12345"));
+        $this->assertEquals("Bonjour, 12345!", $hello->sayHello("1234e5"));
     }
 
     public function testReturnType(): void
